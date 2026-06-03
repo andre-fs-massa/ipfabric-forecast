@@ -164,7 +164,7 @@ TELEMETRY SNAPSHOT:
 Return ONLY valid JSON in this exact schema — no markdown, no explanation outside the JSON:
 {{
   "forecast_generated_at": "<ISO timestamp>",
-  "summary": "<2-3 sentence executive summary of the overall network health>",
+  "summary": "<1-2 sentence executive summary of the overall network health>",
   "risk_forecast": [
     {{
       "device_id": "<matches one of the device names above, lowercase-hyphenated>",
@@ -173,7 +173,7 @@ Return ONLY valid JSON in this exact schema — no markdown, no explanation outs
       "risk_score": <0-100 integer>,
       "days_to_incident": <estimated days as integer, null if low risk>,
       "primary_signal": "<the single most concerning metric trend>",
-      "reasoning": "<2-3 sentences explaining WHY this device is at risk, referencing specific metric trends>",
+      "reasoning": "<1 sentence explaining WHY this device is at risk, referencing specific metric trends>",
       "recommended_action": "<specific, actionable recommendation>"
     }}
   ],
